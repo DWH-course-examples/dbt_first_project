@@ -1,0 +1,16 @@
+version: 2
+models:
+  - name: stg_a
+    columns:
+      - name: a
+        tests:
+          - not_null
+          - unique
+      - name: b
+        tests:
+          - not_null
+          - unique
+      - name: c
+        tests:
+          - not_null
+          - unique

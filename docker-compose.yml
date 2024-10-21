@@ -1,0 +1,15 @@
+version: '2'
+services:
+  postgres:
+    image: postgres
+    environment:
+      POSTGRES_PASSWORD: postgres
+    ports:
+      - 5432:5432
+
+  dev:
+    build: .
+    volumes:
+     - .:/usr/app/
+    ports:
+      - 8080:8080
